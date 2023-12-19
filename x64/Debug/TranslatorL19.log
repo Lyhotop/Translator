@@ -1,0 +1,3 @@
+﻿  StructData.h
+E:\3 курс\СП\TranslatorL19\StructData.h(68,2): warning C4091: 'extern ': ignored on left of 'FSMStates' when no variable is declared
+  TranslatorL19.vcxproj -> E:\3 курс\СП\TranslatorL19\x64\Debug\TranslatorL19.exe
