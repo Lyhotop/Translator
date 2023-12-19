@@ -1,0 +1,65 @@
+[Project]
+Create Empty Library Module,\masm64\text64\module.txt
+-
+Assembler ASM Module,plugins\module.dll
+-
+Makeit.bat,makeit.bat
+-
+Run Executable,plugins\runexe.dll
+
+[Code]
+Window at minimum Size,{e}se.exe k:\masm64\scripts\barewin.qse
+Window with Toolbar Win,{e}se.exe k:\masm64\scripts\toolbar_win.qse
+Full Edit Application,{e}se.exe k:\masm64\scripts\fulledit.qse
+Sidebar Edit Application,{e}se.exe k:\masm64\scripts\sidebared.qse
+-
+Dialog template,{e}se.exe k:\masm64\scripts\mkdlg.qse
+Blank Dialog,{e}se.exe k:\masm64\scripts\blankdlg.qse
+-
+Create DLL Skeleton,{e}se.exe k:\masm64\scripts\dllskeleton.qse
+-
+Create Console App,{e}se.exe k:\masm64\scripts\console.qse
+-
+Run Script Engine,{e}se.exe
+
+[Tools]
+Procedure Browser,{e}qetb.exe {e}\m64lib
+-
+Edit resources in ResEd,{e}\ResEd.exe
+Subclass 64 Bit,{e}subclass64.exe
+Mangle Code,{e}mangle64.exe
+-
+Bin2Db64,{e}bin2db64.exe
+MultiTool Conversions,{e}multitool.exe
+-
+Colour Picker,{e}cpicker.exe
+Get Colour,{e}getcolor.exe
+-
+Map Procedures,{e}procmap.exe {e}teditor.exe
+Character Table,{e}maketbl.exe
+-
+Live Debug,{e}livedb.exe
+Window Explorer,{e}shellex.exe \
+
+[Text]
+Create UI makelib.bat,{e}text64\makelib.txt
+Create Console makelib.bat,{e}text64\appmakeit.txt
+-
+No Stack Frame Module,{e}text64\mod_nostackframe.txt
+Stack Frame Module,{e}text64\mod_stackframe.txt
+-
+Line ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤,{e}text64\line.txt
+-
+Entry_Point Proc,{e}text64\baretemplate.txt
+-
+MessageBox 64 Bit,{e}text64\msgbox64.txt
+Console Template,{e}text64\console.txt
+Assemble Module Code,{e}text64\assemble.txt
+Create MANIFEST File,{e}text64\manifest64.txt
+
+[&Help]
+Rtf Help,{e}rtfhelp.exe k:{e}rtfhelp
+-
+MASM64 help,{e}help64\masmhelp.exe
+-
+Win32 Help,{e}help64\win32.hlp

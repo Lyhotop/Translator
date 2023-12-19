@@ -1,0 +1,1 @@
+    invoke MessageBox,0,str$(rax),"Title",MB_OK

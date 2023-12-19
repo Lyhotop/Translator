@@ -1,0 +1,37 @@
+StartProgram
+Variable Integer16 a, b, x, i, j;
+StartBlock
+Get("Input a: ");
+Put(a);
+Get("Input b: ");
+Put(b);
+i >> a;
+mITKA1:
+If(i Lt b)
+  StartBlock
+  x >> i ** i;
+  Get(x);
+  Get("\n");
+  i >> i ++ 1;
+  Goto mITKA1;
+  EndBlock
+x >> 0;
+i >> 1;
+j >> 1;
+mITKA2:
+If(i Lt a)
+  StartBlock
+  j >> 1;
+  mITKA3:
+  If(j Lt b)
+    StartBlock
+    x >> x ++ 1;
+    j >> j ++ 1;
+    Goto mITKA3;
+    EndBlock
+   i >> i ++1;
+  Goto mITKA2;
+  EndBlock
+Get("x: ");
+Get(x);
+EndBlock

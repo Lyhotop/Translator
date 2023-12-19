@@ -1,0 +1,28 @@
+StartProgram
+Variable Integer16 a, b, cC, x;
+StartBlock
+Get("Input a: ");
+Put(a);
+Get("Input b: ");
+Put(b);
+Get("Input c: ");
+Put(cC);
+If(a Lt b)
+	StartBlock
+	x >> b;
+	EndBlock
+Else
+	StartBlock
+	x >> a;
+	EndBlock
+If(x Lt cC)
+	StartBlock
+	Get("The largest number: ");
+	Get(cC);
+	EndBlock
+Else
+	StartBlock
+	Get("The largest number: ");
+	Get(x);
+	EndBlock
+EndBlock

@@ -1,0 +1,28 @@
+; いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+    include \masm64\include64\masm64rt.inc
+
+    .code
+
+; いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+NOSTACKFRAME
+
+empty_module proc
+
+
+
+
+
+
+
+
+    ret
+
+empty_module endp
+
+STACKFRAME
+
+; いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+    end

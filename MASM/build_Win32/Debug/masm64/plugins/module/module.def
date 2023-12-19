@@ -1,0 +1,2 @@
+LIBRARY module
+ EXPORTS Plugin_Interface

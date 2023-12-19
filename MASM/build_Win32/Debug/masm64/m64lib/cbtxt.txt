@@ -1,0 +1,35 @@
+; いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+    include \masm32\include64\masm64rt.inc
+
+    .code
+
+; いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+SetClipboardText proc hWin:QWORD,ptxt:QWORD
+
+    LOCAL hMem  :QWORD
+    LOCAL pMem  :QWORD
+    LOCAL slen  :QWORD
+
+    rcall StrLen, ptxt                                  ; get length of text
+    mov slen, rax
+    add slen, 4
+
+    mov hMem, rvcall(GlobalAlloc,GMEM_MOVEABLE,slen)    ; allocate memory
+    mov pMem, rvcall(GlobalLock,hMem)
+    rcall szCopy,ptxt,pMem                              ; copy text to locked memory
+    rcall OpenClipboard,hWin                            ; open clipboard
+    rcall EmptyClipboard
+    rcall SetClipboardData,CF_TEXT,pMem                 ; write data to it
+    rcall CloseClipboard                                ; close clipboard
+    rcall GlobalUnlock,hMem
+    rcall GlobalFree,hMem                               ; deallocate memory
+
+    ret
+
+SetClipboardText endp
+
+; いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+    end

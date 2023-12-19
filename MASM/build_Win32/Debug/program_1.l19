@@ -1,0 +1,34 @@
+StartProgram
+Variable Integer16 a, b, rESULT, x, y;
+StartBlock
+Get("Input a: ");
+Put(a);
+Get("Input b: ");
+Put(b);
+rESULT >> a ++ b;
+Get("a + b = ");
+Get(rESULT);
+Get("\n");
+rESULT >> a -- b;
+Get("a -- b = ");
+Get(rESULT);
+Get("\n");
+rESULT >> a Div b;
+Get("a Div b = ");
+Get(rESULT);
+Get("\n");
+rESULT >> a Mod b;
+Get("a Mod b = ");
+Get(rESULT);
+Get("\n");
+
+x >> (a -- b) ** 10 ++ (a ++ b) Div 10;
+Get("x = (a - b) * 10 + (a + b) / 10 = ");
+Get(x);
+Get("\n");
+
+y >> x ++ x Mod 10;
+Get("y = x + x Mod 10 = ");
+Get(y);
+Get("\n");
+EndBlock
