@@ -64,15 +64,19 @@ int main(int argc, std::string* argv)
 	printf("Output file: %s\n", std::string(std::string(Data.OutputFileName) + ".asm").c_str());
 	printf("_________________________________________________________________________________________________\n\n");
 	char TokenFile[1000];
+	char ErrorFile[1000];
 	int i = 0;
 
 	while (Data.InputFileName[i] != '.')
 	{
 		TokenFile[i] = Data.InputFileName[i];
+		ErrorFile[i] = Data.InputFileName[i];
 		i++;
 	}
 	TokenFile[i] = '\0';
+	ErrorFile[i] = '\0';
 	strcat_s(TokenFile, "LexemTable.txt");
+	strcat_s(ErrorFile, "_errors.txt");
 	// Breaking into tokens and printing into file
 	printf("Breaking into lexems are starting...\n");
 	Data.LexNum = GetTokens(InF);
@@ -88,7 +92,7 @@ int main(int argc, std::string* argv)
 	}
 	TokenFile[i] = '\0';
 	printf("Error checking are starting...\n");
-	printf("Report file: ");
+	printf("Report file: %s", ErrorFile);
 	Data.numberErrors = handleError(TokenFile);
 
 	printf("\nError checking is complete. There is(are) %d errors.\n", Data.numberErrors);

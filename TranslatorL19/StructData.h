@@ -150,6 +150,6 @@ public:
 	}
 };
 
-extern Stack myStack, stackiF;
-extern DataType Data;
-extern FILE* InF, * OutF, * ErrorF;
+ static Stack myStack, stackiF;
+ static DataType Data;
+ static FILE* InF, * OutF, * ErrorF;

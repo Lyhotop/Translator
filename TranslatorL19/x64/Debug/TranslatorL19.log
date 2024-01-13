@@ -1,3 +1,19 @@
-﻿  StructData.h
-E:\3 курс\СП\TranslatorL19\StructData.h(68,2): warning C4091: 'extern ': ignored on left of 'FSMStates' when no variable is declared
-  TranslatorL19.vcxproj -> E:\3 курс\СП\TranslatorL19\x64\Debug\TranslatorL19.exe
+﻿  main.cpp
+E:\3 курс\СП\Курсова робота\TranslatorL19\StructData.h(68,2): warning C4091: 'extern ': ignored on left of 'FSMStates' when no variable is declared
+E:\3 курс\СП\Курсова робота\TranslatorL19\LexicalAnalizer.h(244,27): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\LexicalAnalizer.h(573,29): warning C4018: '<': signed/unsigned mismatch
+E:\3 курс\СП\Курсова робота\TranslatorL19\ErrorsCheck.h(211,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\ErrorsCheck.h(296,16): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
+E:\3 курс\СП\Курсова робота\TranslatorL19\ErrorsCheck.h(580,10): warning C4101: 'buf': unreferenced local variable
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(36,14): warning C4477: 'fprintf' : format string '%lld' requires an argument of type '__int64', but variadic argument 2 has type 'long'
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(36,14): message : consider using '%ld' in the format string
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(172,21): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(191,54): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(205,52): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(322,13): warning C4129: '%': unrecognized character escape sequence
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(353,16): warning C4477: 'fprintf' : format string '%lld' requires an argument of type '__int64', but variadic argument 2 has type 'long'
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(353,16): message : consider using '%ld' in the format string
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(451,34): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\Generator.h(451,21): warning C4244: 'initializing': conversion from '__int64' to 'const int', possible loss of data
+E:\3 курс\СП\Курсова робота\TranslatorL19\main.cpp(53,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  TranslatorL19.vcxproj -> E:\3 курс\СП\Курсова робота\TranslatorL19\x64\Debug\TranslatorL19.exe

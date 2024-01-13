@@ -219,16 +219,20 @@ inline int checkBalance(int& nom, const TypeOfLex ends, const TypeOfLex ltStart,
 	return j;
 }
 
-inline int handleError(const std::string& filename)
+inline int handleError(const char* filename)
 {
 	int i = 0;
-	FILE* ef;
 	int err_num = 0;
 	bool is_stop = false;
 	int count_of_var_types = 0;
 	size_t vector_iterator = 0;
 	std::vector<int> var_type_index(10, 150);
-	ef = fopen(std::string("Errors_" + filename + ".txt").c_str(), "w");
+	FILE* ef;
+	if ((fopen_s(&ef, filename, "wt")) != 0)
+	{
+		printf("Error: Can not create file: %s\n", filename);
+		return 0 ;
+	}
 	fputs("Error list:\n\n", ef);
 	int startIndex{};
 
@@ -597,10 +601,6 @@ inline int handleError(const std::string& filename)
 			if (Data.LexTable[j].type == LEOF) break;
 		}
 		if (err_num == 0) {
-			printf("Errors_");
-			printf("%s", filename);
-			printf(".txt");
-
 			fprintf(ef, "No errors found.");
 		}
 	}
